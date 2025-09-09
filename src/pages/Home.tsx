@@ -1,5 +1,7 @@
 import React from 'react'
 import LazyImage from '../components/LazyImage'
+import ProjectsGrid from '../components/ProjectsGrid'
+import '../components/ProjectsGrid.css'
 
 const Home: React.FC = () => {
   return (
@@ -43,6 +45,9 @@ const Home: React.FC = () => {
           className="lazy-image"
         />
       </div>
+
+      {/* Featured Projects Section */}
+      <ProjectsGrid maxItems={6} className="home-projects" />
     </div>
   )
 }
